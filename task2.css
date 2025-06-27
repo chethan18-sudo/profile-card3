@@ -1,0 +1,45 @@
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr; /* Divide into three equal rows */
+    height: 600px;
+    width: 600px;
+    border-bottom-right-radius: 50px;
+    background-color: pink; /* Optional background color for visibility */
+    position: relative; /* Needed for absolute positioning inside */
+}
+
+.card1 {
+    height: 200px;
+    width: 600px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the top */
+    text-align: center;   
+ 
+    
+}
+
+.card2, .card3 {
+    height: 200px;
+    width: 600px;
+    background-color:grey
+}
+
+.top-center-img {
+    position: absolute;
+    left: 50%;
+    top: 200px; /* Height of the red box */
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+
+
+
+
